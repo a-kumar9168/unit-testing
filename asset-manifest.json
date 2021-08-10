@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/a-kumar9168/unit-testing.git/static/css/main.a617e044.chunk.css",
+    "main.js": "/a-kumar9168/unit-testing.git/static/js/main.be4a863f.chunk.js",
+    "main.js.map": "/a-kumar9168/unit-testing.git/static/js/main.be4a863f.chunk.js.map",
+    "runtime-main.js": "/a-kumar9168/unit-testing.git/static/js/runtime-main.28d1026e.js",
+    "runtime-main.js.map": "/a-kumar9168/unit-testing.git/static/js/runtime-main.28d1026e.js.map",
+    "static/js/2.1ba709d0.chunk.js": "/a-kumar9168/unit-testing.git/static/js/2.1ba709d0.chunk.js",
+    "static/js/2.1ba709d0.chunk.js.map": "/a-kumar9168/unit-testing.git/static/js/2.1ba709d0.chunk.js.map",
+    "static/js/3.467dbc26.chunk.js": "/a-kumar9168/unit-testing.git/static/js/3.467dbc26.chunk.js",
+    "static/js/3.467dbc26.chunk.js.map": "/a-kumar9168/unit-testing.git/static/js/3.467dbc26.chunk.js.map",
+    "index.html": "/a-kumar9168/unit-testing.git/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/a-kumar9168/unit-testing.git/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.1ba709d0.chunk.js.LICENSE.txt": "/a-kumar9168/unit-testing.git/static/js/2.1ba709d0.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/a-kumar9168/unit-testing.git/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.28d1026e.js",
+    "static/js/2.1ba709d0.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.be4a863f.chunk.js"
+  ]
+}
