@@ -35,6 +35,14 @@ pipeline {
           def server = Artifactory.server 'My_Artifactory'
           uploadArtifact(server)
         }
+          script {
+        mydict = [:]
+        mydict["My_KNL"] = {
+            build job: 'My_KNL', parameters: [[$class: 'BooleanParameterValue', name: 'TAG_BUILD', value: true]]
+        }
+        // and so on.. for all of your jobs.
+        parallel mydict
+       }
       }
     }
   }
