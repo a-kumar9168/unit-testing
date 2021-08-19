@@ -54,3 +54,12 @@ def uploadArtifact(server) {
   server.upload spec: uploadSpec, buildInfo: buildInfo
   server.publishBuildInfo buildInfo
 }
+@NonCPS
+def getTime() {
+    if (currentBuild.number % 2 != 0){
+        return 10
+    }
+    else{
+        return 5
+    }
+}
