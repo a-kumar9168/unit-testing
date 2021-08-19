@@ -1,5 +1,6 @@
 #!/bin/groovy
 pipeline {
+  agent none
   tools {
     nodejs 'default-nodejs'
   }
@@ -11,7 +12,6 @@ pipeline {
         }
       }
     }
-  agent none
     stages{
         stage ("Build"){
             milestone(1)
