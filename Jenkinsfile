@@ -45,7 +45,6 @@ pipeline {
        }
       }
     }
-  }
 }
 def uploadArtifact(server) {
   def uploadSpec = """{
