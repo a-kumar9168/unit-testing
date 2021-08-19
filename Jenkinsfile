@@ -11,31 +11,24 @@ pipeline {
         }
       }
     }
-    stage('Test') {
-      steps {
-        script {
-          sh 'npm run test'
+  agent none
+    stages{
+        stage ("Build"){
+            milestone(1)
+            sleep getTime()
+            echo "finishing build"
         }
-      }
-      post {
-        always {
-          step([$class: 'CoberturaPublisher', coberturaReportFile: 'output/coverage/jest/cobertura-coverage.xml'])
+        stage ("Test"){
+            milestone (10)
+            sleep getTime()
+            echo "finishing Test"
         }
-      }
+        stage ("Deploy"){
+            milestone (20)
+            sleep getTime()
+            echo "finishing Deploy"
+        }
     }
-    stage('Build') {
-      steps {
-        script {
-          sh 'npm start'
-          sh 'npm pack'
-        }
-      }
-    }
-    stage('Deploy') {
-      when {
-        expression {
-          currentBuild.result == null || currentBuild.result == 'SUCCESS'
-        }
       }
       steps {
         script {
