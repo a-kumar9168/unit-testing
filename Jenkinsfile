@@ -17,7 +17,7 @@ pipeline {
 
             post {
                 always {
-                    junit '**/target/surefire-reports/TEST-*.xml'
+                    junit '**output\code-coverage\lcov-report\index.html'
                 }
             }
         }
